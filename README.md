@@ -1,4 +1,4 @@
-# Robin Thunholm — Portfolio v3
+# Portfolio v3
 
 Static HTML/CSS/JS portfolio for GitHub Pages.
 
