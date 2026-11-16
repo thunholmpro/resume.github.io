@@ -3,8 +3,28 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#100c14" name="theme-color"/>
-<meta content="Robin Thunholm — Swedish multidisciplinary creative. Creative direction, film, motion design and visual storytelling. Explore selected work, experience and project scopes." name="description"/>
-<title>Robin Thunholm — Creative Portfolio 2026</title>
+<meta name="author" content="Robin Thunholm"/>
+<meta name="description" content="Robin Thunholm is a Swedish creative director and motion designer in Bangkok, creating brand stories through film, visual identity, motion and digital design."/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+<title>Robin Thunholm | Creative Director &amp; Motion Designer</title>
+<link rel="canonical" href="https://robin.thunholm.life/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Robin Thunholm"/>
+<meta property="og:title" content="Robin Thunholm | Creative Director &amp; Motion Designer"/>
+<meta property="og:description" content="Robin Thunholm is a Swedish creative director and motion designer in Bangkok, creating brand stories through film, visual identity, motion and digital design."/>
+<meta property="og:url" content="https://robin.thunholm.life/"/>
+<meta property="og:image" content="https://robin.thunholm.life/assets/thumbnail.jpg"/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta property="og:image:width" content="1920"/>
+<meta property="og:image:height" content="1080"/>
+<meta property="og:image:alt" content="A selection of Robin Thunholm's creative work in a video portfolio."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Robin Thunholm | Creative Director &amp; Motion Designer"/>
+<meta name="twitter:description" content="Swedish creative director and motion designer based in Bangkok, creating brand stories through film, visual identity, motion and digital design."/>
+<meta name="twitter:image" content="https://robin.thunholm.life/assets/thumbnail.jpg"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://robin.thunholm.life/#website","url":"https://robin.thunholm.life/","name":"Robin Thunholm | Creative Director & Motion Designer","inLanguage":"en","about":{"@id":"https://robin.thunholm.life/#person"}},{"@type":"Person","@id":"https://robin.thunholm.life/#person","name":"Robin Thunholm","url":"https://robin.thunholm.life/","image":"https://robin.thunholm.life/assets/profilePurple.png","jobTitle":"Creative Director and Motion Designer","description":"Swedish creative director and motion designer based in Bangkok, creating brand stories through film, visual identity, motion and digital design.","email":"robin@thunholm.life","nationality":{"@type":"Country","name":"Sweden"},"homeLocation":{"@type":"Place","name":"Bangkok, Thailand"},"sameAs":["https://www.linkedin.com/in/thunholm/"],"knowsAbout":["Creative direction","Motion design","Film production","Graphic design","Visual storytelling","Digital media"]}]}
+</script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
@@ -44,6 +64,7 @@ html{scroll-padding-top:24px}
 .cert-badge-cursor{position:fixed;left:0;top:0;z-index:100;width:72px;height:72px;object-fit:contain;opacity:0;pointer-events:none;--badge-tilt:0deg;transform:translateY(12px) scale(.9) rotate(var(--badge-tilt));transition:opacity .18s ease,transform .12s linear}
 .cert-badge-cursor.is-visible{opacity:1;transform:translateY(0) scale(1) rotate(var(--badge-tilt))}
 .cert-badge-cursor.is-settling{transition:opacity .18s ease,transform .55s cubic-bezier(.34,1.56,.64,1)}
+.cert-badge-cursor.is-hiding{transition:none!important}
 @media(prefers-reduced-motion:reduce){.cert-badge-cursor{transition:none}}
 .timeline-row{transition:background .3s ease,border-color .3s ease}
 .timeline-row h3{transition:color .25s ease}
@@ -61,6 +82,9 @@ html{scroll-padding-top:24px}
 </style>
 <style>
 .bento-grid .tile{border-radius:18px}
+.marquee .marquee-track{display:flex;width:max-content;padding:0;white-space:normal;animation:marquee-scroll 35s linear infinite;will-change:transform}
+.marquee .marquee-copy{display:block;flex:0 0 auto;white-space:nowrap;padding:15px 0;font-size:10px;letter-spacing:.3em;color:#e3c5e9}
+@keyframes marquee-scroll{to{transform:translateX(var(--marquee-distance,0px))}}
 .bento-grid .tile.glow-edge:after{border-radius:inherit;animation-duration:5.5s;animation-play-state:paused;opacity:.42}
 .bento-grid .tile.glow-edge.is-visible:after{animation-play-state:running}
 .bento-grid .tile.glow-edge:hover:after{animation-duration:3.2s;opacity:1}
@@ -88,8 +112,9 @@ html{scroll-padding-top:24px}
 <style>
 #top{background:var(--bg)}
 #top:before{display:none}
-#top .hero-image{inset:0;width:100%;height:100%;object-fit:cover;object-position:center;mask-image:none;mix-blend-mode:normal;opacity:.72;z-index:1}
+#top .hero-image{inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;mask-image:none;mix-blend-mode:normal;opacity:.72;z-index:1}
 #top .hero-content{z-index:3}
+@media(min-width:671px){#top .hero-content{padding-top:44px}}
 #top:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(90deg,rgba(12,11,13,.4),rgba(12,11,13,.08) 75%)}
 </style>
 <style>
@@ -141,6 +166,33 @@ html{scroll-padding-top:24px}
 }
 @media(prefers-reduced-motion:reduce){.showreel-play:hover{transform:translate(-50%,-50%)}}
 .hero-subline .circle-button{display:none}
+.work-card .work-preview{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .8s cubic-bezier(.2,.8,.2,1)}
+.work-card:hover .work-preview{transform:scale(1.055);filter:saturate(1.08)}
+#work .filter-row{display:none}
+#top .hero-meta > span:first-child{display:grid;gap:6px}
+#top .hero-meta-title{display:block;font-size:clamp(18px,1.7vw,24px);font-weight:700;line-height:1.2;letter-spacing:.01em;text-transform:none;color:#f2eee9;animation:hero-meta-title-loop 5s ease-in-out infinite}
+#top .hero-meta-subtitle{display:block;font-size:10px;font-weight:500;line-height:1.4;letter-spacing:.08em;text-transform:none;color:#d6bed9;animation:hero-meta-subtitle-loop 5.6s ease-in-out infinite}
+@keyframes hero-meta-title-loop{0%,100%{transform:translateY(0);text-shadow:0 0 0 rgba(217,148,234,0)}50%{transform:translateY(-2px);text-shadow:0 3px 14px rgba(217,148,234,.28)}}
+@keyframes hero-meta-subtitle-loop{0%,100%{opacity:.82;transform:translateY(0)}50%{opacity:1;transform:translateY(-1px)}}
+#top .hero-meta-subtitle{color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.typewriter-caret{display:inline-block;width:2px;height:.82em;margin-left:.06em;vertical-align:-.08em;background:currentColor;animation:typewriter-blink .9s steps(1,end) infinite}
+@keyframes typewriter-blink{50%{opacity:0}}
+#approach .headline-mask:nth-child(2) .headline-line{min-height:2.16em}
+@media(max-width:894px){#approach .headline-mask:nth-child(2) .headline-line{min-height:3.24em}}
+@media(prefers-reduced-motion:reduce){.typewriter-caret{display:none}#approach .headline-mask:nth-child(2) .headline-line{min-height:0}}
+.resume-dialog{width:min(1100px,calc(100vw - 28px));height:min(92vh,1000px);height:min(92dvh,1000px);max-width:calc(100vw - 28px);max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);padding:0;overflow:hidden;border:1px solid rgba(195,126,220,.58);background:#121015;color:var(--white);box-shadow:0 32px 100px rgba(0,0,0,.7)}
+.resume-dialog[open]{display:flex;flex-direction:column}
+.resume-dialog::backdrop{background:rgba(7,6,9,.74);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.resume-dialog-header{display:flex;flex:0 0 60px;align-items:center;justify-content:space-between;gap:12px;padding:0 18px;border-bottom:1px solid var(--edge);background:#171519}
+.resume-dialog-title{margin:0;font-size:15px;font-weight:600}
+.resume-dialog-actions{display:flex;align-items:center;gap:12px}
+.resume-dialog-download,.resume-dialog-close{border:1px solid #55475a;background:transparent;color:inherit}
+.resume-dialog-download{padding:9px 12px;font-size:11px}
+.resume-dialog-close{width:36px;height:36px;font-size:22px;line-height:1}
+.resume-dialog-download:hover,.resume-dialog-close:hover{background:#302333}
+.resume-dialog-download:focus-visible,.resume-dialog-close:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.resume-dialog-pdf{display:block;flex:1;width:100%;min-height:0;border:0;background:#fff}
+.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
 </style>
 </head>
 <body>
@@ -148,7 +200,7 @@ html{scroll-padding-top:24px}
 <header class="shell topbar"><a aria-label="Robin Thunholm home" class="brand" href="#top"><img alt="" src="assets/logo.webp"/><span>ROBIN THUNHOLM<small>CREATIVE PORTFOLIO / 2026</small></span></a><nav aria-label="Main navigation" class="nav" id="mainnav"><a href="#approach">Approach</a><a href="#showreel">Showreel</a><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a class="nav-cta magnetic" href="#contact">Let's talk ↗</a></nav><button aria-expanded="false" aria-label="Toggle menu" class="mobile-toggle" id="menuToggle">☰</button></header>
 <main id="main">
 
-<div aria-hidden="true" class="marquee"><div>CREATIVE DIRECTION <b>✳</b> VISUAL STORYTELLING <b>✳</b> MOTION DESIGN <b>✳</b> FILMMAKING <b>✳</b> DESIGN SYSTEMS <b>✳</b> CREATIVE DIRECTION <b>✳</b> VISUAL STORYTELLING <b>✳</b> MOTION DESIGN <b>✳</b> FILMMAKING <b>✳</b> DESIGN SYSTEMS <b>✳</b></div></div>
+<div aria-hidden="true" class="marquee"><div class="marquee-track"><span class="marquee-copy">CREATIVE DIRECTION <b>✳</b> VISUAL STORYTELLING <b>✳</b> MOTION DESIGN <b>✳</b> FILMMAKING <b>✳</b> DESIGN SYSTEMS <b>✳</b></span></div></div>
 
 
 
@@ -157,48 +209,65 @@ html{scroll-padding-top:24px}
 
 
 
-<section class="hero" id="top"><div class="grain"></div><img alt="Robin filming beneath illuminated billboards in Bangkok" class="hero-image" src="assets/hero-bkk.webp"/><div class="shell hero-content"><div class="hero-meta"><span>Multidisciplinary creative<br/>Based in Bangkok · From Sweden</span><span>Art direction / Motion / Film<br/>Independent &amp; globally minded</span></div><h1 class="hero-title serif"><span>ROBIN</span><span class="outline-word">THUNHOLM</span></h1><div class="hero-subline"><p>Turning ideas into <em>visual experiences.</em><br/>From first concept to final frame.</p><a aria-label="Explore portfolio" class="circle-button magnetic" href="#about">↗</a></div></div></section><section class="intro section-pad approach-intro" id="approach"><div class="shell"><div class="intro-grid"><article class="intro-primary reveal"><div><div class="eyebrow">01 / Creative Approach</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">Hello, I'm Robin.</span></span><span class="headline-mask"><span class="headline-line">A creative who <em>makes brands move.</em></span></span></h2><p>I'm a Swedish multidisciplinary creative with over a decade of experience spanning art direction, motion design and visual content production. I bring together storytelling, visual craft and technical fluency to create engaging brand experiences across TV, digital, social and print.</p></div><div class="metrics"><div class="metric"><strong>10+</strong><span>Years of creative experience</span></div><div class="metric"><strong>360°</strong><span>Concept to delivery</span></div><div class="metric"><strong>5+</strong><span>Creative disciplines</span></div></div></article><div class="intro-portrait reveal"><img alt="Portrait of Robin Thunholm with creative software interface graphics" loading="lazy" src="assets/png.png"/></div></div></div></section><section class="reel" id="showreel"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">02 / In motion</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">Don't just take</span></span><span class="headline-mask"><span class="headline-line"><em>my word for it.</em></span></span></h2></div><p>33 seconds of creative work across films, art direction, motion and digital media. Press play and turn the sound on.</p></div><div class="video-frame reveal"><video aria-label="Robin Thunholm 2026 showreel" controls="" playsinline="" poster="assets/thumbnail.jpg" preload="metadata"><source src="assets/showreel-2026.mp4" type="video/mp4"/>Your browser does not support embedded video. <a href="assets/showreel-2026.mp4">Open the showreel</a></video><div class="video-label">Robin Thunholm / Showreel 2026</div></div></div></section><section class="work section-pad" id="work"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">03 / Selected Work</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">A practice across</span></span><span class="headline-mask"><span class="headline-line"><em>styles &amp; formats.</em></span></span></h2></div><p>A curated set of frames from my 2026 showreel. Filter by discipline to explore the different sides of my creative work.</p></div><div aria-label="Filter visual work" class="filter-row" role="group"><button aria-pressed="true" class="filter-btn active" data-filter="all">All work (6)</button><button aria-pressed="false" class="filter-btn" data-filter="film">Film &amp; production</button><button aria-pressed="false" class="filter-btn" data-filter="motion">Motion &amp; digital</button><button aria-pressed="false" class="filter-btn" data-filter="direction">Creative direction</button></div><div class="work-grid" id="workGrid">
+<section class="hero" id="top"><div class="grain"></div><img alt="Robin filming beneath illuminated billboards in Bangkok" class="hero-image" src="assets/Header-Bangkok-1.webp" fetchpriority="high" decoding="async"/><div class="shell hero-content"><div class="hero-meta"><span>Multidisciplinary creative<br/>Based in Bangkok · From Sweden</span><span>Art direction / Motion / Film<br/>Independent &amp; globally minded</span></div><h1 class="hero-title serif"><span>ROBIN</span><span class="outline-word">THUNHOLM</span></h1><div class="hero-subline"><p>Turning ideas into <em>visual experiences.</em><br/>From first concept to final frame.</p><a aria-label="Explore portfolio" class="circle-button magnetic" href="#about">↗</a></div></div></section><section class="intro section-pad approach-intro" id="approach"><div class="shell"><div class="intro-grid"><article class="intro-primary reveal"><div><div class="eyebrow">01 / INTRODUCTION</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">Hello, I'm Robin.</span></span><span class="headline-mask"><span class="headline-line">A creative who <em>makes brands move.</em></span></span></h2><p>I'm a Swedish multidisciplinary creative with over a decade of experience spanning art direction, motion design and visual content production. I bring together storytelling, visual craft and technical fluency to create engaging brand experiences across TV, digital, social and print.</p></div><div class="metrics"><div class="metric"><strong>10+</strong><span>Years of creative experience</span></div><div class="metric"><strong>360°</strong><span>Concept to delivery</span></div><div class="metric"><strong>5+</strong><span>Creative disciplines</span></div></div></article><div class="intro-portrait reveal"><img alt="Portrait of Robin Thunholm with creative software interface graphics" loading="lazy" src="assets/png.png"/></div></div></div></section><section class="reel" id="showreel"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">02 / PORTFOLIO</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">Don't just take</span></span><span class="headline-mask"><span class="headline-line"><em>my word for it.</em></span></span></h2></div><p>33 seconds of creative work across films, art direction, motion and digital media. Press play and turn the sound on.</p></div><div class="video-frame reveal"><video aria-label="Robin Thunholm 2026 showreel" controls="" playsinline="" poster="assets/thumbnail.jpg" preload="metadata"><source src="assets/showreel-2026.mp4" type="video/mp4"/>Your browser does not support embedded video. <a href="assets/showreel-2026.mp4">Open the showreel</a></video><div class="video-label">SHOWREEL 2026</div></div></div></section><section class="work section-pad" id="work"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">03 / RANGE</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">A practice across</span></span><span class="headline-mask"><span class="headline-line"><em>styles &amp; formats.</em></span></span></h2></div><p>Stills and clips from projects I’ve directed, designed and animated.</p></div><div aria-label="Filter visual work" class="filter-row" role="group"><button aria-pressed="true" class="filter-btn active" data-filter="all">All work (6)</button><button aria-pressed="false" class="filter-btn" data-filter="film">Film &amp; production</button><button aria-pressed="false" class="filter-btn" data-filter="motion">Motion &amp; digital</button><button aria-pressed="false" class="filter-btn" data-filter="direction">Creative direction</button></div><div class="work-grid" id="workGrid">
 <article class="work-card reveal depth-card" data-categories="film direction"><img alt="Studio film production still" loading="lazy" src="assets/reel-02.jpg"/><div class="work-content"><span class="work-tag">Film / Production</span><h3 class="project-label">On-set storytelling</h3><p>Visual direction, studio environments &amp; cinematic production.</p></div></article>
-<article class="work-card reveal depth-card" data-categories="direction motion"><img alt="Creative portfolio and design compilation" loading="lazy" src="assets/reel-03.jpg"/><div class="work-content"><span class="work-tag">Art direction</span><h3 class="project-label">Concept to craft</h3><p>Creative ideas shaped for brand and digital experiences.</p></div></article>
-<article class="work-card reveal depth-card" data-categories="film"><img alt="Cinematic lifestyle video frame" loading="lazy" src="assets/reel-04.jpg"/><div class="work-content"><span class="work-tag">Film / Lifestyle</span><h3 class="project-label">Stories in motion</h3><p>Character, atmosphere, framing &amp; visual tone.</p></div></article>
-<article class="work-card reveal depth-card" data-categories="motion direction"><img alt="Motion and digital media composite" loading="lazy" src="assets/reel-05.jpg"/><div class="work-content"><span class="work-tag">Motion / Social</span><h3 class="project-label">Digital-first visuals</h3><p>Fast-moving content designed to catch attention.</p></div></article>
-<article class="work-card reveal depth-card" data-categories="direction motion"><img alt="Collection of digital visual design projects" loading="lazy" src="assets/reel-07.jpg"/><div class="work-content"><span class="work-tag">Design / Direction</span><h3 class="project-label">Brand worlds, built to move</h3><p>Visual systems, digital compositions &amp; creative range.</p></div></article>
+<article class="work-card reveal depth-card" data-categories="direction motion" data-hover-video><video aria-hidden="true" class="work-preview" loop muted playsinline poster="assets/code1.jpg" preload="none"><source src="assets/code1.mp4" type="video/mp4"/></video><div class="work-content"><span class="work-tag">Art direction</span><h3 class="project-label">Concept to craft</h3><p>Creative ideas shaped for brand and digital experiences.</p></div></article>
+<article class="work-card reveal depth-card" data-categories="film" data-hover-video><video aria-hidden="true" class="work-preview" loop muted playsinline poster="assets/bag1.jpg" preload="none"><source src="assets/bag1.mp4" type="video/mp4"/></video><div class="work-content"><span class="work-tag">Film / Lifestyle</span><h3 class="project-label">Stories in motion</h3><p>Character, atmosphere, framing &amp; visual tone.</p></div></article>
+<article class="work-card reveal depth-card" data-categories="motion direction"><img alt="Motion and digital media composite" loading="lazy" src="assets/digitalfirst.jpg"/><div class="work-content"><span class="work-tag">Motion / Social</span><h3 class="project-label">Digital-first visuals</h3><p>From pocket to billboard.</p></div></article>
+<article class="work-card reveal depth-card" data-categories="direction motion" data-hover-video><video aria-hidden="true" class="work-preview" loop muted playsinline poster="assets/card1.jpg" preload="none"><source src="assets/card1.mp4" type="video/mp4"/></video><div class="work-content"><span class="work-tag">Design / Direction</span><h3 class="project-label">Brand worlds, built to move</h3><p>Visual systems, digital compositions &amp; creative range.</p></div></article>
 <article class="work-card reveal depth-card" data-categories="motion"><img alt="Layered website and visual motion presentation" loading="lazy" src="assets/reel-08.jpg"/><div class="work-content"><span class="work-tag">Motion / Web</span><h3 class="project-label">Layered experiences</h3><p>Composition, interface thinking &amp; dynamic presentation.</p></div></article>
 </div><p class="work-note">Imagery is sourced from Robin's supplied 2026 showreel. Titles describe creative disciplines rather than separate verified client case studies.</p></div></section><section class="bento section-pad" id="expertise"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">04 / What I Bring</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">What I bring</span></span><span class="headline-mask"><span class="headline-line"><em>to the table.</em></span></span></h2></div><p>Where visual thinking, hands-on production and new technology meet.</p></div><div class="bento-grid">
-<div class="tile large reveal depth-card glow-edge"><div class="tile-number">01 / The big picture</div><div><h3>Ideas are only as good as how they come to life.</h3><p>I bridge concept, art direction, production and post — so each stage feels like part of the same story.</p></div><span class="pill">CONCEPT → DELIVERY ↗</span></div>
+<div class="tile large reveal depth-card glow-edge"><div class="tile-number">01 / The big picture</div><div><h3>The whole kit, concept to campaign.</h3><p>I bridge concept, art direction, production and post, so each stage feels like part of the same story.</p></div><span class="pill">CONCEPT → DELIVERY ↗</span></div>
 <div class="tile reveal depth-card glow-edge"><div class="tile-number">02 / Direct</div><div aria-hidden="true" class="icon-3d-slot" data-icon-key="creative-direction"><img alt="" class="expertise-icon" src="assets/icon01.png"/></div><div><h3>Creative direction</h3><p>Creative strategy, concept development, art direction and visual storytelling.</p></div></div>
 <div class="tile reveal depth-card glow-edge"><div class="tile-number">03 / Capture</div><div aria-hidden="true" class="icon-3d-slot" data-icon-key="film-photography"><img alt="" class="expertise-icon" src="assets/icon03.png"/></div><div><h3>Film &amp; photography</h3><p>Lighting, composition, shooting and editing.</p></div></div>
 <div class="tile reveal depth-card glow-edge"><div class="tile-number">04 / Animate</div><div aria-hidden="true" class="icon-3d-slot" data-icon-key="motion-design"><img alt="" class="expertise-icon" src="assets/icon06.png"/></div><div><h3>Motion design</h3><p>Brand identities, explainers and social edits that move with intent.</p></div></div>
 <div class="tile reveal depth-card glow-edge"><div class="tile-number">05 / Design</div><div aria-hidden="true" class="icon-3d-slot" data-icon-key="graphic-design"><img alt="" class="expertise-icon" src="assets/icon04.png"/></div><div><h3>Graphic design</h3><p>Layout, type and visual systems for print and digital, with real production know-how.</p></div></div>
 <div class="tile wide reveal depth-card glow-edge"><div class="tile-number">06 / Evolve</div><div aria-hidden="true" class="icon-3d-slot" data-icon-key="ai-enhanced-creative-workflows"><img alt="" class="expertise-icon" src="assets/icon02.png"/></div><div><h3>AI-enhanced creative workflows</h3><p>Practical application of generative AI tools for media exploration, ideation and production.</p></div></div>
 <div class="tile wide reveal depth-card glow-edge"><div class="tile-number">07 / Collaborate</div><div aria-hidden="true" class="icon-3d-slot" data-icon-key="teaching-pitching-creative-collaboration"><img alt="" class="expertise-icon" src="assets/icon05.png"/></div><div><h3>Pitching, teaching &amp; collaboration</h3><p>Pitching ideas with clear decks, leading workshops and mentoring creative teams.</p></div></div>
-</div></div></section><section class="process section-pad" id="approach-process"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">05 / The Process</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">From what if</span></span><span class="headline-mask"><span class="headline-line"><em>to what’s next.</em></span></span></h2></div></div><div class="process-grid"><div class="process-step reveal"><span class="step-id">/ 01</span><h3>Discover</h3><p>Understand the goals, audience and creative possibilities.</p></div><div class="process-step reveal"><span class="step-id">/ 02</span><h3>Concept</h3><p>Find the idea, the story and the look that fit the brief.</p></div><div class="process-step reveal"><span class="step-id">/ 03</span><h3>Create</h3><p>Produce, design, animate and refine through collaboration.</p></div><div class="process-step reveal"><span class="step-id">/ 04</span><h3>Deliver</h3><p>Polish and prepare the final assets for the places they'll live.</p></div></div></div></section><section class="timeline-section section-pad" id="experience"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">06 / Experience &amp; Education</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">The experience</span></span><span class="headline-mask"><span class="headline-line"><em>behind the work.</em></span></span></h2></div><p>Agency experience, multidisciplinary execution and a formal foundation in graphic design and technology.</p></div><div class="timeline reveal"><div class="timeline-row"><span class="year">2025 &rarr;</span><h3>Content Specialist<span>Arco Agency</span></h3><p>Responsible for end-to-end content production across scroll-driven platforms, covering the full process from ideation to final delivery. The role combines hands-on creative execution with a strong understanding of digital culture, ensuring that brands stand out, remain relevant, and feel relatable.</p></div><div class="timeline-row"><span class="year">2024 <br>&rarr; 2025</span><h3>Content Producer<span>Keep Up Agency</span></h3><p>Managed content output for a portfolio of brands across social media, owning the creative direction from brief to published post. Responsible for keeping every piece on brand, consistent in tone and voice, and tuned to what performs on each platform. Worked closely with the team to turn brand strategy into content that felt native to the feed and relatable to the audience.</p></div><div class="timeline-row"><span class="year">2019<br>&rarr; 2024</span><h3>Art Director<span>Bartos Media</span></h3><p>Handled a wide range of visual projects, developing and producing content for TV, social media, and integrated campaigns across print and digital platforms. Oversaw film, animation, and photography to build cohesive brand narratives that resonate with audiences. Responsibilities included art direction, motion design, filmmaking, photography, graphic design, and full-scale content production.</p></div><div class="timeline-row"><span class="year">2015<br>&rarr; 2019</span><h3>Graphic Designer<span>Happify Communication</span></h3><p>Managed the creative process from concept to completion, including idea development, storyboarding, directing, filming, and final delivery. Work spanned commercial films, social media campaigns, and multi-platform advertising across both print and digital channels.</p></div><div class="timeline-category">EDUCATION &amp; CERTIFICATIONS</div><div class="timeline-row education-row certification-row"><span class="year">2026</span><h3>Certification in Creative Strategy<span>Issued by Motion</span></h3><p>An eight-week live training program focused on mastering the fundamentals of Creative Strategy including research, creative analysis, ad creation, briefing, and AI-assisted analysis.</p></div><div class="timeline-row education-row"><span class="year">2012<br>&rarr; 2015</span><h3>BSc, Graphic Design &amp; Technology<span>Dalarna University, Sweden</span></h3><p>Three-year program (180 credits) combining graphic design with digital and print production. Coursework covered typography, layout, illustration, brand identity and profiling, photography, and image editing, alongside web design, JavaScript, and human-computer interaction. Developed a strong production mindset through print production, graphic production workflows, and quality management, and completed a 15-credit bachelor thesis in graphic technology.</p></div></div><div class="small-caption" style="margin-top:36px">Selected tools &amp; platforms</div><div class="software-row reveal"><span>After Effects</span><span>Premiere Pro</span><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Figma</span><span>Davinci Resolve</span><span>Higgsfield</span><span>ElevenLabs</span><span>Suno</span><span>Dreamina</span><span>PowerPoint</span><span>KeyPoint</span><span>Google Workspace</span><span>Frame.io</span><span>Notion</span><span>Miro</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span></div><div style="margin-top:29px"><a class="btn ghost magnetic" download="" href="assets/robin-thunholm-cv.pdf">Download full CV <span>↗</span></a></div></div></section><section class="estimator section-pad" id="estimator"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">07 / Project Planner</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">Have something</span></span><span class="headline-mask"><span class="headline-line"><em>in mind?</em></span></span></h2></div><p>Sketch the scope of a creative assignment. This interactive estimator offers an illustrative planning range, not a binding quotation.</p></div><div class="est-grid"><div class="est-form reveal"><div class="eyebrow" style="margin-bottom:35px">Build your brief / 01—04</div><div class="field"><label for="type">01 / What are we making?</label><select id="type"><option value="presentation">Presentation / pitch deck</option><option value="motion">Motion graphics / animation</option><option value="edit">Video editing / post-production</option><option value="brand">Brand visuals / design system</option><option value="full">Full video production</option></select></div><div class="field"><label for="units">02 / Project size <span id="unitCount">12 slides</span></label><input id="units" max="40" min="4" step="1" type="range" value="12"/></div><div class="field"><label for="complexity">03 / Creative complexity</label><select id="complexity"><option value="1">Essential — clear &amp; considered</option><option selected="" value="1.45">Elevated — custom visuals</option><option value="1.95">Signature — art-directed</option></select></div><div class="field"><label for="speed">04 / Timeline</label><select id="speed"><option selected="" value="1">Standard — flexible schedule</option><option value="1.25">Priority — accelerated delivery</option><option value="1.55">Rush — tight turnaround</option></select></div><div class="field" style="margin:0"><label>Optional additions</label><div class="est-checks"><label><input id="strategy" type="checkbox"/> Creative concept</label><label><input checked="" id="revisions" type="checkbox"/> Extra revision round</label></div></div></div><div aria-live="polite" class="est-result reveal"><div><span class="result-kicker">Indicative planning budget / SEK</span><div class="result-price" id="price">—</div><p class="result-copy">A tailored starting point for the conversation. The final scope, timing and pricing would be confirmed together.</p><div class="result-breakdown"><div><span>Deliverable</span><strong id="rType">Presentation / pitch deck</strong></div><div><span>Scale</span><strong id="rUnits">12 slides</strong></div><div><span>Complexity</span><strong id="rComplex">Elevated</strong></div><div><span>Timeline</span><strong id="rSpeed">Standard</strong></div></div></div><div><a class="btn light magnetic" href="mailto:robin@thunholm.life" id="briefLink">Discuss this scope ↗</a><p class="est-disclaimer">*Planning illustration only — not published rates or a formal quote. All figures are adjustable assumptions, not CV-sourced prices. Taxes, travel, licensing and third-party costs are excluded.</p></div></div></div></div></section><section class="contact" id="contact"><div class="shell"><div class="eyebrow">08 / Let's Collaborate</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">Ready to make</span></span><span class="headline-mask"><span class="headline-line">something <em>great?</em></span></span></h2><div class="contact-bottom"><div class="contact-person"><img alt="Robin Thunholm" src="assets/profilePurple.png"/><div><strong>Robin Thunholm</strong><span>Creative direction · Motion · Visual storytelling</span><span>Bangkok, Thailand · Working internationally</span></div></div><div class="contact-links"><a class="btn light magnetic" href="mailto:robin@thunholm.life">Email me ↗</a><a class="btn ghost magnetic" href="https://www.linkedin.com/in/thunholm/" rel="noopener" target="_blank">LinkedIn ↗</a><a class="btn ghost magnetic" download="" href="assets/robin-thunholm-cv.pdf">Resume ↓</a></div></div><footer class="footer"><span>© <span id="year">2026</span> Robin Thunholm</span><span>Made to move. Built to connect.</span><a href="#top">Back to top ↑</a></footer></div></section></main>
+</div></div></section><section class="process section-pad" id="approach-process"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">05 / The Process</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">From what if</span></span><span class="headline-mask"><span class="headline-line"><em>to what’s next.</em></span></span></h2></div></div><div class="process-grid"><div class="process-step reveal"><span class="step-id">/ 01</span><h3>Discover</h3><p>Understand the goals, audience and creative possibilities.</p></div><div class="process-step reveal"><span class="step-id">/ 02</span><h3>Concept</h3><p>Find the idea, the story and the look that fit the brief.</p></div><div class="process-step reveal"><span class="step-id">/ 03</span><h3>Create</h3><p>Produce, design, animate and refine through collaboration.</p></div><div class="process-step reveal"><span class="step-id">/ 04</span><h3>Deliver</h3><p>Polish and prepare the final assets for the places they'll live.</p></div></div></div></section><section class="timeline-section section-pad" id="experience"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">05 / Experience &amp; Education</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">The experience</span></span><span class="headline-mask"><span class="headline-line"><em>behind the work.</em></span></span></h2></div><p>Agency experience, multidisciplinary execution and a formal foundation in graphic design and technology.</p></div><div class="timeline reveal"><div class="timeline-row"><span class="year">2025 &rarr;</span><h3>Content Specialist<span>Arco Agency</span></h3><p>Responsible for end-to-end content production across scroll-driven platforms, covering the full process from ideation to final delivery. The role combines hands-on creative execution with a strong understanding of digital culture, ensuring that brands stand out, remain relevant, and feel relatable.</p></div><div class="timeline-row"><span class="year">2024 <br>&rarr; 2025</span><h3>Content Producer<span>Keep Up Agency</span></h3><p>Managed content output for a portfolio of brands across social media, owning the creative direction from brief to published post. Responsible for keeping every piece on brand, consistent in tone and voice, and tuned to what performs on each platform. Worked closely with the team to turn brand strategy into content that felt native to the feed and relatable to the audience.</p></div><div class="timeline-row"><span class="year">2019<br>&rarr; 2024</span><h3>Art Director<span>Bartos Media</span></h3><p>Handled a wide range of visual projects, developing and producing content for TV, social media, and integrated campaigns across print and digital platforms. Oversaw film, animation, and photography to build cohesive brand narratives that resonate with audiences. Responsibilities included art direction, motion design, filmmaking, photography, graphic design, and full-scale content production.</p></div><div class="timeline-row"><span class="year">2015<br>&rarr; 2019</span><h3>Graphic Designer<span>Happify Communication</span></h3><p>Managed the creative process from concept to completion, including idea development, storyboarding, directing, filming, and final delivery. Work spanned commercial films, social media campaigns, and multi-platform advertising across both print and digital channels.</p></div><div class="timeline-category">DEGREE &amp; CERTIFICATION</div><div class="timeline-row education-row certification-row"><span class="year">2026</span><h3>Certification in Creative Strategy<span>Issued by Motion</span></h3><p>An eight-week live training program focused on mastering the fundamentals of Creative Strategy including research, creative analysis, ad creation, briefing, and AI-assisted analysis.</p></div><div class="timeline-row education-row"><span class="year">2012<br>&rarr; 2015</span><h3>BSc, Graphic Design &amp; Technology<span>Dalarna University, Sweden</span></h3><p>Three-year program (180 credits) combining graphic design with digital and print production. Coursework covered typography, layout, illustration, brand identity and profiling, photography, and image editing, alongside web design, JavaScript, and human-computer interaction. Developed a strong production mindset through print production, graphic production workflows, and quality management, and completed a 15-credit bachelor thesis in graphic technology.</p></div></div><div class="small-caption" style="margin-top:36px">Selected tools &amp; platforms</div><div class="software-row reveal"><span>After Effects</span><span>Premiere Pro</span><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Figma</span><span>Davinci Resolve</span><span>Higgsfield</span><span>ElevenLabs</span><span>Suno</span><span>Dreamina</span><span>PowerPoint</span><span>KeyPoint</span><span>Google Workspace</span><span>Frame.io</span><span>Notion</span><span>Miro</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span></div><div style="margin-top:29px"><a class="btn ghost magnetic" download="" href="assets/CV_Resume_Robin_Thunholm.pdf">Download full CV <span>↗</span></a></div></div></section><section class="estimator section-pad" id="estimator"><div class="shell"><div class="section-top reveal"><div><div class="eyebrow">07 / Project Planner</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">Have something</span></span><span class="headline-mask"><span class="headline-line"><em>in mind?</em></span></span></h2></div><p>Sketch the scope of a creative assignment. This interactive estimator offers an illustrative planning range, not a binding quotation.</p></div><div class="est-grid"><div class="est-form reveal"><div class="eyebrow" style="margin-bottom:35px">Build your brief / 01—04</div><div class="field"><label for="type">01 / What are we making?</label><select id="type"><option value="presentation">Presentation / pitch deck</option><option value="motion">Motion graphics / animation</option><option value="edit">Video editing / post-production</option><option value="brand">Brand visuals / design system</option><option value="full">Full video production</option></select></div><div class="field"><label for="units">02 / Project size <span id="unitCount">12 slides</span></label><input id="units" max="40" min="4" step="1" type="range" value="12"/></div><div class="field"><label for="complexity">03 / Creative complexity</label><select id="complexity"><option value="1">Essential — clear &amp; considered</option><option selected="" value="1.45">Elevated — custom visuals</option><option value="1.95">Signature — art-directed</option></select></div><div class="field"><label for="speed">04 / Timeline</label><select id="speed"><option selected="" value="1">Standard — flexible schedule</option><option value="1.25">Priority — accelerated delivery</option><option value="1.55">Rush — tight turnaround</option></select></div><div class="field" style="margin:0"><label>Optional additions</label><div class="est-checks"><label><input id="strategy" type="checkbox"/> Creative concept</label><label><input checked="" id="revisions" type="checkbox"/> Extra revision round</label></div></div></div><div aria-live="polite" class="est-result reveal"><div><span class="result-kicker">Indicative planning budget / SEK</span><div class="result-price" id="price">—</div><p class="result-copy">A tailored starting point for the conversation. The final scope, timing and pricing would be confirmed together.</p><div class="result-breakdown"><div><span>Deliverable</span><strong id="rType">Presentation / pitch deck</strong></div><div><span>Scale</span><strong id="rUnits">12 slides</strong></div><div><span>Complexity</span><strong id="rComplex">Elevated</strong></div><div><span>Timeline</span><strong id="rSpeed">Standard</strong></div></div></div><div><a class="btn light magnetic" href="mailto:robin@thunholm.life" id="briefLink">Discuss this scope ↗</a><p class="est-disclaimer">*Planning illustration only — not published rates or a formal quote. All figures are adjustable assumptions, not CV-sourced prices. Taxes, travel, licensing and third-party costs are excluded.</p></div></div></div></div></section><section class="contact" id="contact"><div class="shell"><div class="eyebrow">08 / Let's Collaborate</div><h2 class="serif headline-reveal"><span class="headline-mask"><span class="headline-line">Ready to make</span></span><span class="headline-mask"><span class="headline-line">something <em>great?</em></span></span></h2><div class="contact-bottom"><div class="contact-person"><img alt="Robin Thunholm" src="assets/profilePurple.png"/><div><strong>Robin Thunholm</strong><span>Creative direction · Motion · Visual storytelling</span><span>Bangkok, Thailand · Working internationally</span></div></div><div class="contact-links"><a class="btn light magnetic" href="mailto:robin@thunholm.life">Email me ↗</a><a class="btn ghost magnetic" href="https://www.linkedin.com/in/thunholm/" rel="noopener" target="_blank">LinkedIn ↗</a><a class="btn ghost magnetic" download="" href="assets/CV_Resume_Robin_Thunholm.pdf">Resume ↓</a></div></div><footer class="footer"><span>© <span id="year">2026</span> Robin Thunholm</span><span>Made to move. Built to connect.</span><a href="#top">Back to top ↑</a></footer></div></section></main>
 <script>
 (()=>{
 const toggle=document.querySelector('#menuToggle'),nav=document.querySelector('#mainnav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open);toggle.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
+const resumeLink=document.querySelector('#contact .contact-links a[download]'),resumeDialog=document.createElement('dialog'),resumeHeader=document.createElement('div'),resumeTitle=document.createElement('h2'),resumeActions=document.createElement('div'),resumeDownload=document.createElement('a'),resumeClose=document.createElement('button'),resumePdf=document.createElement('iframe');
+resumeDialog.className='resume-dialog';resumeDialog.setAttribute('aria-labelledby','resume-dialog-title');resumeDialog.id='resumeDialog';
+resumeHeader.className='resume-dialog-header';resumeTitle.className='resume-dialog-title';resumeTitle.id='resume-dialog-title';resumeTitle.textContent='Resume';
+resumeActions.className='resume-dialog-actions';resumeDownload.className='resume-dialog-download';resumeDownload.href=resumeLink.href;resumeDownload.download='CV_Resume_Robin_Thunholm.pdf';resumeDownload.textContent='Download PDF ↓';
+resumeClose.className='resume-dialog-close';resumeClose.type='button';resumeClose.setAttribute('aria-label','Close resume');resumeClose.textContent='×';
+resumePdf.className='resume-dialog-pdf';resumePdf.title='Robin Thunholm resume';resumePdf.src=resumeLink.href;
+resumeActions.append(resumeDownload,resumeClose);resumeHeader.append(resumeTitle,resumeActions);resumeDialog.append(resumeHeader,resumePdf);document.body.append(resumeDialog);
+resumeLink.setAttribute('aria-haspopup','dialog');resumeLink.setAttribute('aria-controls',resumeDialog.id);
+resumeLink.addEventListener('click',event=>{event.preventDefault();resumeDialog.showModal();resumeClose.focus()});
+resumeClose.addEventListener('click',()=>resumeDialog.close());
+resumeDialog.addEventListener('click',event=>{if(event.target===resumeDialog)resumeDialog.close()});
+resumeDialog.addEventListener('close',()=>resumeLink.focus());
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.09});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-const certificationRow=document.querySelector('.certification-row'),certBadge=document.createElement('img');certBadge.className='cert-badge-cursor';certBadge.src='assets/motionbadge.png';certBadge.alt='';certBadge.setAttribute('aria-hidden','true');document.body.append(certBadge);
-const certReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)'),certTiltLimit=22,certTiltTimers={return:0,hide:0};let certPointer=null;
-if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
- certificationRow.addEventListener('pointermove',ev=>{
-  if(ev.pointerType!=='mouse'&&ev.pointerType!=='pen')return;
-  clearTimeout(certTiltTimers.return);clearTimeout(certTiltTimers.hide);certBadge.classList.remove('is-settling');
-  const badgeSize=72,gap=14,left=Math.min(ev.clientX+gap,innerWidth-badgeSize-8),top=Math.max(8,ev.clientY-badgeSize-gap);
-  certBadge.style.left=left+'px';certBadge.style.top=top+'px';
-  const now=performance.now();
-  if(certPointer&&!certReducedMotion.matches){
-   const elapsed=Math.max(1,now-certPointer.time),vx=(ev.clientX-certPointer.x)/elapsed,vy=(ev.clientY-certPointer.y)/elapsed,speed=Math.hypot(vx,vy),direction=Math.abs(vx)>=Math.abs(vy)?-Math.sign(vx):Math.sign(vy),tilt=speed<.08?0:direction*Math.min(certTiltLimit,speed*12);
-   certBadge.style.setProperty('--badge-tilt',tilt.toFixed(1)+'deg');
-  }
-  certPointer={x:ev.clientX,y:ev.clientY,time:now};
-  certBadge.classList.add('is-visible');
-  certTiltTimers.return=setTimeout(()=>{certBadge.classList.add('is-settling');certBadge.style.setProperty('--badge-tilt','0deg')},120);
- },{passive:true});
- certificationRow.addEventListener('pointerleave',()=>{
-  clearTimeout(certTiltTimers.return);certPointer=null;certBadge.classList.add('is-settling');certBadge.style.setProperty('--badge-tilt','0deg');
-  certTiltTimers.hide=setTimeout(()=>{certBadge.classList.remove('is-visible','is-settling')},320);
- });
-}
+const certReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)'),certTiltLimit=22;
+const attachEducationBadge=(row,src)=>{
+ const badge=document.createElement('img'),timers={return:0};let pointer=null;
+ badge.className='cert-badge-cursor';badge.src=src;badge.alt='';badge.setAttribute('aria-hidden','true');document.body.append(badge);
+ if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+  row.addEventListener('pointermove',ev=>{
+   if(ev.pointerType!=='mouse'&&ev.pointerType!=='pen')return;
+   clearTimeout(timers.return);badge.classList.remove('is-settling','is-hiding');
+   const badgeSize=72,gap=14,left=Math.min(ev.clientX+gap,innerWidth-badgeSize-8),top=Math.max(8,ev.clientY-badgeSize-gap);
+   badge.style.left=left+'px';badge.style.top=top+'px';
+   const now=performance.now();
+   if(pointer&&!certReducedMotion.matches){
+    const elapsed=Math.max(1,now-pointer.time),vx=(ev.clientX-pointer.x)/elapsed,vy=(ev.clientY-pointer.y)/elapsed,speed=Math.hypot(vx,vy),direction=Math.abs(vx)>=Math.abs(vy)?-Math.sign(vx):Math.sign(vy),tilt=speed<.08?0:direction*Math.min(certTiltLimit,speed*12);
+    badge.style.setProperty('--badge-tilt',tilt.toFixed(1)+'deg');
+   }
+   pointer={x:ev.clientX,y:ev.clientY,time:now};
+   badge.classList.add('is-visible');
+   timers.return=setTimeout(()=>{badge.classList.add('is-settling');badge.style.setProperty('--badge-tilt','0deg')},120);
+  },{passive:true});
+  row.addEventListener('pointerleave',()=>{
+   clearTimeout(timers.return);pointer=null;badge.style.setProperty('--badge-tilt','0deg');
+   badge.classList.remove('is-visible','is-settling');badge.classList.add('is-hiding');
+  });
+ }
+};
+attachEducationBadge(document.querySelector('.certification-row'),'assets/motionbadge.png');
+attachEducationBadge(document.querySelector('.timeline-row.education-row:not(.certification-row)'),'assets/hd_du_vertikal_rgb.png');
 const showreelVideo=document.querySelector('#showreel video'),showreelFrame=document.querySelector('#showreel .video-frame'),showreelPlay=document.createElement('button'),showreelPlayIcon=document.createElement('span'),showreelPlayLabel=document.createElement('span');
 showreelPlay.type='button';showreelPlay.className='showreel-play';showreelPlay.setAttribute('aria-label','Play the showreel');
 showreelPlayIcon.className='showreel-play-icon';showreelPlayIcon.setAttribute('aria-hidden','true');showreelPlayIcon.textContent='▶';
@@ -211,7 +280,36 @@ const $=id=>document.getElementById(id),ty=$('type'),size=$('units'),co=$('compl
 
 // Refined scroll headline reveals; responsive to reduced-motion preference.
 const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
-const headlineObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-in');headlineObserver.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+const typewriterOutput=document.createElement('span'),typewriterCaret=document.createElement('span');
+const typewriterEm=document.querySelector('#approach .headline-mask:nth-child(2) .headline-line em');
+const typewriterEndings=['makes brands move.','makes strategy look good.','presents ideas clearly.','designs whole campaigns.'];
+typewriterOutput.className='typewriter-ending';typewriterOutput.textContent=typewriterEm.textContent;
+typewriterCaret.className='typewriter-caret';typewriterCaret.setAttribute('aria-hidden','true');
+typewriterEm.replaceChildren(typewriterOutput,typewriterCaret);
+let typewriterStarted=false,typewriterIndex=0,typewriterLength=0,typewriterDeleting=false;
+const typewriterStep=()=>{
+ const phrase=typewriterEndings[typewriterIndex];
+ if(typewriterDeleting){
+  typewriterLength--;
+  typewriterOutput.textContent=phrase.slice(0,typewriterLength);
+  if(typewriterLength===0){typewriterDeleting=false;typewriterIndex=(typewriterIndex+1)%typewriterEndings.length;window.setTimeout(typewriterStep,240)}
+  else window.setTimeout(typewriterStep,42);
+  return;
+ }
+ if(typewriterLength<phrase.length){
+  typewriterLength++;
+  typewriterOutput.textContent=phrase.slice(0,typewriterLength);
+  window.setTimeout(typewriterStep,72);
+  return;
+ }
+ typewriterDeleting=true;
+ window.setTimeout(typewriterStep,2000);
+};
+const startTypewriter=()=>{
+ if(typewriterStarted||reducedMotion.matches)return;
+ typewriterStarted=true;typewriterOutput.textContent='';typewriterStep();
+};
+const headlineObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-in');if(entry.target.contains(typewriterOutput))window.setTimeout(startTypewriter,1100);headlineObserver.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
 document.querySelectorAll('.headline-reveal').forEach(el=>headlineObserver.observe(el));
 const edgeObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{entry.target.classList.toggle('is-visible',entry.isIntersecting)}),{threshold:.01});
 document.querySelectorAll('.glow-edge').forEach(card=>edgeObserver.observe(card));
@@ -228,6 +326,24 @@ if(window.matchMedia('(hover:hover) and (pointer:fine)').matches && !reducedMoti
   el.addEventListener('pointermove',ev=>{const r=el.getBoundingClientRect();el.style.setProperty('--mx',((ev.clientX-r.left-r.width/2)*.10).toFixed(1)+'px');el.style.setProperty('--my',((ev.clientY-r.top-r.height/2)*.10).toFixed(1)+'px')},{passive:true});
   el.addEventListener('pointerleave',()=>{el.style.setProperty('--mx','0px');el.style.setProperty('--my','0px')});
  });
+ document.querySelectorAll('.work-card[data-hover-video]').forEach(card=>{
+  const hoverVideo=card.querySelector('.work-preview');
+  let isHoveringVideo=false;
+  card.addEventListener('pointerenter',ev=>{
+   if(ev.pointerType!=='mouse'&&ev.pointerType!=='pen')return;
+   isHoveringVideo=true;
+   hoverVideo.play().catch(error=>{
+    if(error.name!=='AbortError')console.error('Unable to play the work-card preview.',error);
+   });
+  });
+  card.addEventListener('pointerleave',()=>{
+   isHoveringVideo=false;
+   hoverVideo.pause();
+   const resetPreview=()=>{if(!isHoveringVideo)hoverVideo.currentTime=0};
+   if(hoverVideo.readyState>0)resetPreview();
+   else hoverVideo.addEventListener('loadedmetadata',resetPreview,{once:true});
+  });
+ });
 }
 
 })();
@@ -235,11 +351,29 @@ if(window.matchMedia('(hover:hover) and (pointer:fine)').matches && !reducedMoti
 <script>
 document.querySelector('.hero').after(document.querySelector('.marquee'));
 document.querySelector('.marquee').after(document.querySelector('#approach'));
+const marqueeTrack=document.querySelector('.marquee-track'),marqueeCopy=marqueeTrack.querySelector('.marquee-copy');
+const fillMarquee=()=>{
+ const copyWidth=marqueeCopy.getBoundingClientRect().width;
+ if(!copyWidth)return;
+ const copyCount=Math.ceil(marqueeTrack.parentElement.clientWidth/copyWidth)+1;
+ while(marqueeTrack.children.length<copyCount)marqueeTrack.append(marqueeCopy.cloneNode(true));
+ while(marqueeTrack.children.length>copyCount)marqueeTrack.lastElementChild.remove();
+ marqueeTrack.style.setProperty('--marquee-distance',`-${copyWidth}px`);
+};
+fillMarquee();
+document.fonts.ready.then(fillMarquee);
+window.addEventListener('resize',fillMarquee,{passive:true});
 document.querySelector('#approach-process').remove();
 document.querySelector('#estimator').remove();
+document.querySelector('#experience a[download]').remove();
 document.querySelector('#expertise .section-top .eyebrow').textContent='04 / EXPERTISE';
-document.querySelector('#contact .eyebrow').textContent="08 / Let's Collaborate";
-document.querySelector('#showreel .section-top p').textContent='A 33-second cut of film, motion and visual storytelling. Sound on.';
+document.querySelector('#contact .eyebrow').remove();
+document.querySelector('.hero-title').classList.add('visually-hidden');
+const heroIdentity=document.querySelector('#top .hero-meta > span:first-child');
+document.querySelector('#top .hero-meta > span:last-child').remove();
+heroIdentity.innerHTML='<span class="hero-meta-subtitle">Based in Bangkok · From Sweden</span>';
+document.querySelector('.hero-subline').remove();
+document.querySelector('#showreel .section-top p').textContent='33 seconds of brands in motion. Sound on.';
 </script>
 </body>
 </html>
